@@ -8,10 +8,11 @@
 В файле `funk.py` в 4 строке необходимо **указать токен** своего телеграм-бота
 
 ### Небольшое пояснение 
+Команда `/start` была реализована намеренно через `content_types=['text']`, а не через `commands=['start']`.
 ```python
 @bot.message_handler(content_types=['text'])
 def getTextMessages(message):
     if message.text.lower() == "/start":
         startMenu(message)
 ```
-Команда `/start` была реализована намеренно через `content_types=['text']`, а не через `commands=['start']`.
+
