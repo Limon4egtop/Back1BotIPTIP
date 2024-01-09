@@ -1,7 +1,7 @@
 from FakeDataBase import *
 import telebot
 
-bot = telebot.TeleBot("5934114527:AAHWG2eldICRWAeVkCAOGF3yr3MVLdYxWI0")
+bot = telebot.TeleBot("BOT TOKEN")
 
 
 @bot.callback_query_handler(func=lambda call: call.data == "backToMenu")
